@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: lavenderblush;
+    color: #665568;
+}
+
+
+header {
+    background: floralwhite;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px #eadce8;
+    transition: 0.4s;
+}
+
+header:hover {
+    background: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: plum;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: hotpink;
+}
+
+.logo span {
+    color: lightcoral;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #665568;
+    transition: 0.3s;
+}
+
+nav ul a:hover {
+    color: hotpink;
+    transform: translateY(-4px);
+    display: inline-block;
+}
+
+.nav-btn, .main-btn {
+    background: lightpink;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.nav-btn:hover, .main-btn:hover {
+    background: plum;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px pink;
+}
+
+
+
+.hero {
+    min-height: 85vh;
+    padding: 70px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.welcome, .small-heading {
+    color: lightcoral;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.hero h1 span, section h1 span {
+    color: hotpink;
+}
+
+.hero h2 {
+    color: plum;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    line-height: 1.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.second-btn {
+    text-decoration: none;
+    border: 2px solid plum;
+    color: plum;
+    padding: 10px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.second-btn:hover {
+    background: plum;
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+
+.hero-image {
+    position: relative;
+    transition: 0.4s;
+}
+
+.image-circle {
+    background: #f4dff0;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 130px;
+    box-shadow: 0 15px 35px #e8cce3;
+    transition: 0.4s;
+}
+
+.image-circle:hover {
+    transform: rotate(8deg) scale(1.08);
+    background: mistyrose;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: 10px;
+    left: -35px;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px pink;
+    transition: 0.3s;
+}
+
+.floating-card:hover {
+    transform: translateY(-10px);
+}
+
+
+
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section h1 {
+    font-size: 38px;
+    margin: 12px 0 35px;
+}
+
+.about-card, .contact-card {
+    background: white;
+    padding: 40px;
+    max-width: 750px;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px #eadce8;
+    transition: 0.4s;
+}
+
+.about-card:hover, .contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px pink;
+}
+
+.about-card h2, .contact-card h2 {
+    color: plum;
+    margin-bottom: 15px;
+}
+
+.about-card p, .contact-card p {
+    line-height: 2;
+}
+
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card {
+    background: white;
+    padding: 25px 35px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px #eadce8;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    background: lavender;
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 10px 25px pink;
+    color: #a45b9c;
+}
+
+
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 22px;
+    box-shadow: 0 5px 20px #eadce8;
+    transition: 0.4s;
+}
+
+.project-card:hover {
+    transform: translateY(-12px);
+    background: #fff0f5;
+    box-shadow: 0 12px 30px pink;
+}
+
+.project-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+
+.project-card:hover .project-icon {
+    transform: scale(1.3) rotate(10deg);
+}
+
+.project-card h2 {
+    color: plum;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    color: lightcoral;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.project-card a:hover {
+    color: deeppink;
+    letter-spacing: 1px;
+}
+
+
+
+.contact-card .main-btn {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+
+
+footer {
+    background: #ead5e8;
+    text-align: center;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+footer:hover {
+    background: pink;
+}
+
+a, button, img, div, h1, h2, p {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-circle {
+        width: 230px;
+        height: 230px;
+        font-size: 100px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 7%;
+    }
+}
